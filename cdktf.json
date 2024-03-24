@@ -1,0 +1,14 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node bin/infra.ts",
+  "terraformProviders": [
+    "azurerm@~> 3.96.0",
+    "random@~> 3.6.0"
+  ],
+  "sendCrashReports": "false",
+  "terraformModules": [],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
