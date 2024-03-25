@@ -17,22 +17,21 @@
   },
   "dependencies": {
     "@cdktf/provider-azurerm": "^12.11.0",
-    "@types/prettier": "2.7.3",
-    "cdktf": "^0.20.5",
-    "cdktf-cli": "^0.20.5",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.2.5",
-    "ts-node": "^10.9.2"
-  },
-  "devDependencies": {
     "@cdktf/provider-random": "^11.0.0",
     "@types/config": "^3.3.4",
+    "cdktf": "^0.20.5",
+    "cdktf-cli": "^0.20.5",
+    "config": "^3.3.11"
+  },
+  "devDependencies": {
     "@types/node": "^20.11.30",
+    "@types/prettier": "2.7.3",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
-    "config": "^3.3.11",
-    "constructs": "^10.3.0",
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "constructs": "^10.3.0",
     "source-map-support": "^0.5.21",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
