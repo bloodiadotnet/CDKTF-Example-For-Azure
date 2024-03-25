@@ -7,13 +7,15 @@ This document provides step by step instructions to setup CDK for Azure CDK for 
 - Homebrew (for MacOS) or Chocolatey (for Windows)
 - Node.js and npm
 - Terraform
-- Microsoft Azure account
+- Microsoft Azure tenant and subscription
 
 ## Setup Configuration
 
 - Change `product: 'cdktf-example-for-azure'` to your project name in the `config/default.ts` file.
 - Adjust each parameter in `config/<NODE_ENV>.ts` as per your project requirements.
 - The parameters in `config/default.ts` will be overridden by those in `config/<NODE_ENV>.ts`.
+- Visual Studio Code (VS Code) for code editing ([Download Here](https://code.visualstudio.com/download)).
+- ESLint and Prettier plugins for VS Code for better coding practices.
 
 ## Installation
 
