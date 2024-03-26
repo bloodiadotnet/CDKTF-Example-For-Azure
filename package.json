@@ -1,8 +1,8 @@
 {
   "name": "cdktf-example-for-azure",
+  "description": "This source code is a hands-on project that uses the CDK for Terraform (CDKTF) to manage Microsoft Azure resources.",
   "version": "1.0.0",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "get": "cdktf get",
     "build": "tsc",
