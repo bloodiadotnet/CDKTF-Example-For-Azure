@@ -5,13 +5,13 @@ import { StorageContainer } from '../../.gen/providers/azurerm/storage-container
 import { StorageBlob } from '../../.gen/providers/azurerm/storage-blob';
 
 import { StackUtil } from '../../util/stack-util';
-import { Stack } from '../stack';
+import { MainStack } from '../main-stack';
 
 export class SaStack {
     public storageAccount: StorageAccount;
     public storageContainer: StorageContainer;
 
-    constructor(scope: Stack) {
+    constructor(scope: MainStack) {
         const allowedSources = (config.get('vnet.allowedSources') as Array<{ cidrIp: string }>).map(
             (source) => source.cidrIp,
         );
