@@ -9,12 +9,12 @@ import { RandomProvider } from '../../.gen/providers/random/provider';
 import { Password } from '../../.gen/providers/random/password';
 
 import { StackUtil } from '../../util/stack-util';
-import { Stack } from '../stack';
+import { MainStack } from '../main-stack';
 
 export class DbStack {
     public mssqlServerConnectionString: string;
 
-    constructor(scope: Stack) {
+    constructor(scope: MainStack) {
         // Initializing RandomProvider.
         new RandomProvider(scope, 'RandomProvider', {});
 
