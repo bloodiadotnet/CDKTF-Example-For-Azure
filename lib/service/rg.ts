@@ -2,12 +2,12 @@ import config = require('config');
 import { ResourceGroup } from '../../.gen/providers/azurerm/resource-group';
 
 import { StackUtil } from '../../util/stack-util';
-import { Stack } from '../stack';
+import { MainStack } from '../main-stack';
 
 export class RgStack {
     public resourceGroup: ResourceGroup;
 
-    constructor(scope: Stack) {
+    constructor(scope: MainStack) {
         // Resource Group
         this.resourceGroup = new ResourceGroup(scope, 'ResourceGroup', {
             name: StackUtil.getName('rg'),
