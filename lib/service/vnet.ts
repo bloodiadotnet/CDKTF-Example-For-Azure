@@ -3,7 +3,7 @@ import { VirtualNetwork } from '../../.gen/providers/azurerm/virtual-network';
 import { Subnet } from '../../.gen/providers/azurerm/subnet';
 
 import { StackUtil } from '../../util/stack-util';
-import { Stack } from '../stack';
+import { MainStack } from '../main-stack';
 
 export class VnetStack {
     public virtualNetwork: VirtualNetwork;
@@ -11,7 +11,7 @@ export class VnetStack {
     public dbSubnet: Subnet;
     public saSubnet: Subnet;
 
-    constructor(scope: Stack) {
+    constructor(scope: MainStack) {
         // VNET
         this.virtualNetwork = new VirtualNetwork(scope, 'VirtualNetwork', {
             name: StackUtil.getName('vnet'),
