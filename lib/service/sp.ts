@@ -6,10 +6,10 @@ import { AppServiceVirtualNetworkSwiftConnection } from '../../.gen/providers/az
 import { MonitorMetricAlert } from '../../.gen/providers/azurerm/monitor-metric-alert';
 
 import { StackUtil } from '../../util/stack-util';
-import { Stack } from '../stack';
+import { MainStack } from '../main-stack';
 
 export class SpStack {
-    constructor(scope: Stack) {
+    constructor(scope: MainStack) {
         // Service Plan
         const servicePlan = new ServicePlan(scope, 'ServicePlan', {
             name: StackUtil.getName('sp'),
