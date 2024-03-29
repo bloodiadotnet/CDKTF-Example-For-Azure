@@ -3,7 +3,7 @@ import 'source-map-support/register';
 import { App } from 'cdktf';
 
 import { StackUtil } from '../util/stack-util';
-import { Stack } from '../lib/stack';
+import { MainStack } from '../lib/main-stack';
 
 if (process.env['NODE_ENV'] == null || process.env['NODE_ENV'] === '') {
     throw new Error('NODE_ENV is not set');
@@ -22,7 +22,7 @@ const app = new App();
 
 Promise.resolve()
     .then(async () => {
-        new Stack(app, StackUtil.getName());
+        new MainStack(app, StackUtil.getName());
         app.synth();
     })
     .catch((err) =>
