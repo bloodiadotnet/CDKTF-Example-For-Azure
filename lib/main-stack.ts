@@ -8,7 +8,7 @@ import { SaStack } from './service/sa';
 import { DbStack } from './service/db';
 import { SpStack } from './service/sp';
 
-export class Stack extends TerraformStack {
+export class MainStack extends TerraformStack {
     public rg: RgStack;
     public ag: AgStack;
     public vnet: VnetStack;
